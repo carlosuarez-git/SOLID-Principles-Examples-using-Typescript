@@ -2,8 +2,8 @@ import StoreLogger from './StoreLogger'
 import StoreCache from './StoreCache'
 import FileStore from './FileStore'
 import MessageStore from './MessageStore';
-import fs from 'fs';
-import path from 'path'
+import * as fs from 'fs';
+import * as path from 'path'
 
 var dirtest = "./testfiles";
 var dirpath = path.join(__dirname,  dirtest)

@@ -1,6 +1,6 @@
 import { promises as fsp } from 'fs';
-import fs from 'fs';
-import path from 'path'
+import * as fs from 'fs';
+import * as path from 'path'
 import StoreLogger from './StoreLogger'
 
 export default class FileStore {
