@@ -8,17 +8,11 @@ import { SplunkLogger } from './SplunkLogger';
 export default class StorageManagement {
     fileStore: FileStore;
     cacheStore: CacheStore;
-
-    // Chose implementation for Logger
-    // logger = new SplunkLogger();
-    logger = new ConsoleLogger();
+    logger: ConsoleLogger;
 
   constructor(_directory: string) {
       this.fileStore = new FileStore(_directory);
       this.cacheStore = new CacheStore();
-
-      // Chose implementation for Logger
-      // this.logger = new SplunkLogger();
       this.logger = new ConsoleLogger();
   }
 
