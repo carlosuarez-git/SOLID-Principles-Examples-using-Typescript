@@ -1,9 +1,6 @@
 import { CacheStore } from './CacheStore';
 import { FileStore } from './FileStore';
-
-// Chose implementation for Logger
 import { ConsoleLogger } from './ConsoleLogger';
-import { SplunkLogger } from './SplunkLogger';
 
 export default class StorageManagement {
     fileStore: FileStore;
